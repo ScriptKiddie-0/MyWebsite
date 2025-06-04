@@ -64,17 +64,20 @@
     <p><a href="resume.pdf" download>Download my resume (PDF)</a></p>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required><br><br>
-      <input type="email" name="email" placeholder="Your Email" required><br><br>
-      <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br><br>
-      <button type="submit">Send</button>
-    </form>
-    <p id="formMessage"></p>
-    <p>Email: namansharma.nsu4@gmail.com | GitHub: <a href="https://github.com/scriptkiddie-0">scriptkiddie-0</a></p>
-  </section>
+ <section id="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/namansharma.nsu4@gmail.com" method="POST">
+    <!-- Hidden fields -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://scriptkiddie-0.github.io/naman.io/thankyou.html">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
 
   <footer>
     <p>&copy; 2025 Naman. All rights reserved.</p>
